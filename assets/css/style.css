@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Lato", sans-serif;
+  color: #eee;
+  background:#000;
+}
+
+a {
+  color: gold;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", sans-serif;
+}
