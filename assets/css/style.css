@@ -51,7 +51,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
  
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
- 
+.hero-headline {font-size:18vw;}
+.coming-soon {font-size: 3em;} 
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -60,8 +61,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .hero-headline {font-size:24vw;line-height: 0.8em;margin-top: 0.5em;}
 .hero-logo {height: 6em;float: left;margin:0 2em 0 0;}
 .hero-subheader {font-size: 7em;clear:none;}
-.coming-soon {margin: 0;font-size: 4.2em;}
 .pipe, .youtube-link {display: inline;}
+.coming-soon {margin:0;} 
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -69,6 +70,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .hero-headline {font-size:20vw;line-height: 0.8em;margin-top: 0.3em;}
 .hero-logo {height: 6em;float: left;margin:0 2em 0 0;}
 .hero-subheader {font-size: 7em;clear:none;}
+.coming-soon {font-size: 4.2em;}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
