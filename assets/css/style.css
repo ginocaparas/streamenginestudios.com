@@ -13,7 +13,7 @@ a {
 
 a:hover {
   color: goldenrod;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,8 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero-logo {height: 100px;margin:1em auto;}
 .hero-subheader {font-size: 4.2em;clear: both;line-height: 0.9em;}
 
-
-
+.coming-soon {font-family: Bebas Neue;font-size: 2.5em;line-height: 1em;margin-top:1.5em;}
+.pipe {display: none;}
+.youtube-link {text-decoration: none;display: block;}
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -55,10 +56,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
- .hero-container {text-align: left;}
+.hero-container {text-align: left;}
 .hero-headline {font-size:24vw;line-height: 0.8em;margin-top: 0.5em;}
 .hero-logo {height: 6em;float: left;margin:0 2em 0 0;}
 .hero-subheader {font-size: 7em;clear:none;}
+.coming-soon {margin: 0;font-size: 4.2em;}
+.pipe, .youtube-link {display: inline;}
 }
  
 /* Large devices (desktops, 992px and up) */
