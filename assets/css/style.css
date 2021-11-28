@@ -88,6 +88,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .logo-container {
 }
  
+/* SVG GLITCH CSS - from https://codepen.io/aldrie/pen/PojGYLo */
+
 #svgGlitch {vertical-align: bottom;}
 
 .stack {
@@ -116,7 +118,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   0% {
     opacity: 0;
     transform: translateX(-50%);
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    filter: drop-shadow(-2px 2px 0px rgba(0, 200, 255, 1));
   };
   60% {
     opacity: 0.5;
@@ -125,20 +127,20 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   80% {
     transform: none;
     opacity: 1;
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+   	filter: drop-shadow(-2px -2px 0px rgba(0, 200, 20, 1));
   }
   100% {
-    text-shadow: none;
+    filter: none;
   }
 }
 
 @keyframes glitch {
   0% {
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
     transform: translate(var(--glitch-translate));
   }
   2% {
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  	filter: drop-shadow(2px -1px 0px rgba(255, 0, 0, 1));
+    /*text-shadow: 2px -3px 0 red, -2px 3px 0 blue;*/
   }
-  4%, 100% {  text-shadow: none; transform: none; }
+  4%, 100% {  filter: none; transform: none; }
 }
